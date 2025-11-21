@@ -2,7 +2,7 @@
 GET http://localhost:3000/recipes
 
 ### GET recipe by ID
-GET http://localhost:3000/recipes/6920d11a1181b3d1266f4165
+GET http://localhost:3000/recipes/6920d79d10e71ccb7925aac1
 
 ### POST - Create new recipe
 POST http://localhost:3000/recipes HTTP/1.1
