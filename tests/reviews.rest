@@ -1,0 +1,32 @@
+### GET all reviews
+GET http://localhost:3000/reviews
+
+### GET review by ID
+GET http://localhost:3000/reviews/6920d1591181b3d1266f416b
+
+### POST - Create new review
+POST http://localhost:3000/reviews
+Content-Type: application/json
+
+{
+  "recipeId": "6920d11a1181b3d1266f4165",
+  "userName": "Vinicius",
+  "rating": 5,
+  "comment": "Excelente receita! Muito saborosa.",
+  "date": "2025-02-21"
+}
+
+### PUT - Update review
+PUT http://localhost:3000/reviews/6920db954e486e4c40d3185e
+Content-Type: application/json
+
+{
+  "recipeId": "6920d11a1181b3d1266f4165",
+  "userName": "Vinicius",
+  "rating": 4,
+  "comment": "Depois de um tempo, ainda ótima, mas ficou um pouco doce demais.",
+  "date": "2025-02-22"
+}
+
+### DELETE - Remove review
+DELETE http://localhost:3000/reviews/6920db954e486e4c40d3185e
