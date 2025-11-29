@@ -13,7 +13,9 @@ const getAll = async (req, res) => {
     const recipes = await result.toArray();
     res.status(200).json(recipes);
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch recipes", details: error.message });
+    res
+      .status(500)
+      .json({ error: "Failed to fetch recipes", details: error.message });
   }
 };
 
@@ -38,7 +40,9 @@ const getByID = async (req, res) => {
 
     res.status(200).json(result);
   } catch (error) {
-    res.status(500).json({ error: "Failed to fetch recipe", details: error.message });
+    res
+      .status(500)
+      .json({ error: "Failed to fetch recipe", details: error.message });
   }
 };
 
@@ -57,7 +61,9 @@ const createRecipe = async (req, res) => {
 
     // Simple validation
     if (!recipe.name || !recipe.category) {
-      return res.status(400).json({ error: "Missing required fields: name, category" });
+      return res
+        .status(400)
+        .json({ error: "Missing required fields: name, category" });
     }
 
     const response = await mongodb
@@ -74,9 +80,10 @@ const createRecipe = async (req, res) => {
     }
 
     res.status(500).json({ error: "Failed to create recipe" });
-
   } catch (error) {
-    res.status(500).json({ error: "Server error creating recipe", details: error.message });
+    res
+      .status(500)
+      .json({ error: "Server error creating recipe", details: error.message });
   }
 };
 
@@ -113,9 +120,10 @@ const updateRecipe = async (req, res) => {
     }
 
     res.status(404).json({ error: "Recipe not found or no changes made" });
-
   } catch (error) {
-    res.status(500).json({ error: "Failed to update recipe", details: error.message });
+    res
+      .status(500)
+      .json({ error: "Failed to update recipe", details: error.message });
   }
 };
 
@@ -142,9 +150,10 @@ const deleteRecipe = async (req, res) => {
     }
 
     res.status(404).json({ error: "Recipe not found" });
-
   } catch (error) {
-    res.status(500).json({ error: "Failed to delete recipe", details: error.message });
+    res
+      .status(500)
+      .json({ error: "Failed to delete recipe", details: error.message });
   }
 };
 

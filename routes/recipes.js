@@ -3,7 +3,7 @@ const router = express.Router();
 
 const RecipesController = require("../controllers/recipes");
 
-const { isAuthenticated } = require('../middleware/authenticate');
+const { isAuthenticated } = require("../middleware/authenticate");
 
 router.get("/", RecipesController.getAll);
 router.get("/:id", RecipesController.getByID);

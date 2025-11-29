@@ -7,15 +7,11 @@
   },
   "host": "cse-341-project2-j0hg.onrender.com",
   "basePath": "/",
-  "schemes": [
-    "https"
-  ],
+  "schemes": ["https"],
   "paths": {
     "/recipes/": {
       "get": {
-        "tags": [
-          "Recipes"
-        ],
+        "tags": ["Recipes"],
         "description": "",
         "responses": {
           "200": {
@@ -27,9 +23,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Recipes"
-        ],
+        "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -81,9 +75,7 @@
     },
     "/recipes/{id}": {
       "get": {
-        "tags": [
-          "Recipes"
-        ],
+        "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -109,9 +101,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Recipes"
-        ],
+        "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -170,9 +160,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Recipes"
-        ],
+        "tags": ["Recipes"],
         "description": "",
         "parameters": [
           {
@@ -203,9 +191,7 @@
     },
     "/reviews/": {
       "get": {
-        "tags": [
-          "Review"
-        ],
+        "tags": ["Review"],
         "description": "",
         "responses": {
           "200": {
@@ -220,9 +206,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Review"
-        ],
+        "tags": ["Review"],
         "description": "",
         "parameters": [
           {
@@ -268,9 +252,7 @@
     },
     "/reviews/{id}": {
       "get": {
-        "tags": [
-          "Review"
-        ],
+        "tags": ["Review"],
         "description": "",
         "parameters": [
           {
@@ -296,9 +278,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Review"
-        ],
+        "tags": ["Review"],
         "description": "",
         "parameters": [
           {
@@ -351,9 +331,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Review"
-        ],
+        "tags": ["Review"],
         "description": "",
         "parameters": [
           {
